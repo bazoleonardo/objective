@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../vendors/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
+
+    <title>Teste Objective</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <div class="divFlex">
+                <div class="widthdiv1">
+                    <span><span class="black" style="padding-right: 1px">BUSCA KITSU</span>TESTE FRONT-END</span>
+                    <div class="d-none" style="height:4px; width: 54px; background-color: red;"></div>
+                </div>
+                
+                <div class="widthdiv2">
+                    <span>Leonardo Bazo</span>
+                </div>
+                
+                
+            </div>
+            <div class="d-block" style="height:4px; width: 54px; background-color: red;"></div>
+            
+            
+        </header>
+        <main>
+            <div class="busca">
+                <label for="nomper">
+                    Nome do Personagem
+                </label>
+                <input id="nomper" class="iptper" placeholder="Pressione Enter ou Tab para Filtrar">
+            </div>
+            <div class="tabela">
+                <table class="table" id="table">
+                    <div class="divFLex">
+                        <div class="th1">
+                            <span>Nome</span>
+                        </div>
+                        <div class="th2">
+                            <span>Descrição</span>
+                        </div>
+                    </div>
+
+                </table>
+            </div>
+            <div id="pagination" class="pagination">
+                <ul class="justify-content-center">
+                    <span class="page-numbers">
+
+                    </span>
+                </ul>
+            </div>
+            <div id="paginationnumber" class="pagination">
+                
+            </div>
+
+        </main>
+    </div>
+    <footer>
+    </footer>
+    <div id="fade">
+        <div id="ctnModal">
+            <div hidden id="spinner"></div>  
+        </div>
+        
+    </div>
+    <div id="fadeLista">
+        <div id="ctnModalLista">
+            <div id="detalhes">
+                <a  id="close"></a>
+                <ul id="lista-item">
+        
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="../vendors/script.js"></script>
+</body>
+
+</html>

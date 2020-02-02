@@ -1,0 +1,374 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.d-none{
+    display : none;
+}
+tr img {
+  border-radius: 50%;
+}
+.container {
+  margin: 20px 42px 0 42px;
+}
+header span {
+  display: inline-block;
+  color: #d42026;
+
+  font-size: 27px;
+}
+.widthdiv1 {
+  width: 70%;
+  float: left;
+  display: flex;
+  position: relative;
+}
+.widthdiv2 {
+  width: 30%;
+  float: right;
+  display: flex;
+  position: relative;
+}
+.widthdiv2 span {
+  text-align: right;
+  justify-content: flex-end;
+}
+span.black {
+  font-weight: 900 !important;
+}
+.mr-2 {
+  margin-right: 20px;
+}
+.vertical-align-center {
+  vertical-align: center;
+}
+.divFlex {
+  display: flex;
+  width: 100%;
+}
+.th1 {
+  width: 34%;
+  margin-right: 5px;
+}
+.th2 {
+  width: 64%;
+  margin-left: 5px;
+}
+.th1,
+.th2 {
+  float: left;
+  background: #d42026;
+  color: white;
+  font-size: 16px;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (max-width: 675px) {
+    .d-block{
+        display: none;
+    }
+    .d-none{
+        display : block;
+    }
+  .container {
+    margin: 12px 0 0 0px;
+  }
+  .widthdiv1 {
+    width: 100%;
+    display: block;
+    float: left;
+    margin: 12px 30px 12px 10%;
+  }
+  .widthdiv2 {
+    width: 100%;
+    display: block;
+    float: left;
+    margin: 12px 30px 12px 10%;
+  }
+  .th1,
+  .widthcel1 {
+    width: 100%;
+  }
+  .th2,
+  .widthcel2 {
+    display: none;
+  }
+  .divFlex {
+    display: block;
+  }
+  .busca {
+    margin: 12px 30px 12px 10%;
+  }
+  .th1 span {
+    margin-left: 20% !important;
+  }
+  ul {
+    grid-template-columns: 1fr !important;
+    width: 100% ;
+    }
+}
+.th1 span,
+.th2 span {
+  margin-left: 10px;
+}
+.widthcel1 {
+  width: 34%;
+}
+.widthcel2 {
+  width: 64%;
+}
+.busca {
+  margin-top: 34px;
+  margin-bottom: 34px;
+  position: relative;
+}
+.busca label {
+  display: block;
+  width: 100%;
+  color: #d42026;
+  font-size: 16px;
+}
+.busca input {
+  border: 1px center * #a5a5a5 100%;
+  opacity: 100%;
+  width: 400px;
+  height: 31px;
+  background-image: url(../vendors/img/searchicon.png);
+  background-position: 6px 6px;
+  background-repeat: no-repeat;
+  padding: 0 0px 0px 40px;
+  font-size: 16px;
+}
+.tabela {
+  height: 500px;
+  overflow: scroll;
+}
+
+table {
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+tr {
+  max-height: 112px;
+  word-break: break-all;
+  overflow: hidden;
+}
+tbody td {
+  border-bottom: 1px solid #d42026;
+  font-size: 21px;
+  table-layout: fixed;
+}
+tbody td div {
+  height: 112px;
+  overflow: scroll;
+}
+
+td {
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  display: table-cell;
+  height: 112px;
+  overflow: hidden;
+  vertical-align: center;
+  color: #4e4e4e;
+  text-align: justify;
+  opacity: 100%;
+}
+tr:hover {
+  cursor: pointer;
+  background: #fce5e5;
+}
+footer {
+  position: relative;
+  padding: 0;
+}
+.justify-content-center {
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+.pagination {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.pagination ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.25rem;
+}
+.page-link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-left: 6px;
+  line-height: 1.25;
+  color: #D42026;
+  background-color: #FFFFFF;
+  border: 1px solid #D42026;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.page-link:active{
+    background-color: #D42026;
+    color: #fff;
+}
+footer {
+  margin: 0;
+  height: 12px;
+  width: 100%;
+  background-color: red;
+}
+
+#fade,
+#fadeLista {
+  position: absolute;
+  top: 0;
+  display: none;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.7);
+}
+#ctnModal,
+#ctnModalLista {
+  width: 90%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 2px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+#ctnModalLista {
+  height: 600px;
+  overflow: scroll;
+}
+#spinner:not([hidden]) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#spinner::after {
+  content: "";
+  width: 80px;
+  height: 80px;
+  border: 2px solid #f3f3f3;
+  border-top: 3px solid #f25a41;
+  border-radius: 100%;
+  will-change: transform;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*    model lista     */
+ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  list-style: none;
+  width: 100%;
+}
+li.dev-item {
+  background: #fff;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.02);
+  border-radius: 2px;
+  padding: 20px;
+}
+
+li.dev-item header {
+  display: block;
+  flex-direction: row;
+  align-items: center;
+}
+li.dev-item header img {
+  margin-top: 10px;
+  width: 200px;
+  height: 200px;
+}
+li.dev-item header .user-info {
+  margin-left: 10px;
+}
+.user-info strong {
+  display: block;
+  font-size: 16px;
+  color: #333;
+}
+.user-info span {
+  font-size: 13px;
+  color: #999;
+  margin-top: 2px;
+}
+li.dev-item p {
+  color: #666;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 10px 0;
+  width: 80%;
+  text-align: justify;
+}
+li.dev-item a {
+  color: #8e4dff;
+  font-size: 14px;
+  text-decoration: none;
+}
+li.dev-item a:hover {
+  color: #5a2ea6;
+}
+
+/*icon*/
+.detalhes {
+  width: 100%;
+  position: relative;
+}
+#close {
+  float: right;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+#close:hover {
+  opacity: 1;
+}
+#close:before,
+#close:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+#close:before {
+  transform: rotate(45deg);
+}
+#close:after {
+  transform: rotate(-45deg);
+}
